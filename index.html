@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" data-dpr="1" style="font-size: 54px;">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="img/logo-200.jpg">
+	<title>欲しいものはすべてここにあります</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- <script src="js/flexible.js"></script> -->
+	<!-- <script>
+		var linkArr = [
+			"https://www.baidu.com"
+		];
+	</script> -->
+</head>
+
+<body style="font-size: 12px;">
+	<div class="page">
+		<div class="hader">
+			<img src="img/header.jpg" style="padding-bottom: 20px;">
+			<div class="hd-icon">
+				<img class="iconimg" src="img/logo-200.jpg">
+				<div class="hd-txt title">デート MOODYZ</div>
+			</div>
+		</div>
+		<div class="container" style="background-image:url(img/bg.jpg) ;">
+			<div class="photos">
+				<div><img src="img/p1.jpg"></div>
+				<div><img src="img/p2.jpg"></div>
+				<div><img src="img/p3.jpg"></div>
+				<div><img src="img/p4.jpg"></div>
+				<div><img src="img/p5.jpg"></div>
+			</div>
+
+			<div id="mrq">
+				<div id="Marquee_x">
+					<ul>
+						<li>
+							<div><img src="img/photo_1.jpg"></div>
+							<div><img src="img/photo_2.jpg"></div>
+							<div><img src="img/photo_3.jpg"></div>
+							<div><img src="img/photo_4.jpg"></div>
+							<div><img src="img/photo_5.jpg"></div>
+							<div><img src="img/photo_6.jpg"></div>
+							<div><img src="img/photo_7.jpg"></div>
+							<div><img src="img/photo_8.jpg"></div>
+							<div><img src="img/photo_9.jpg"></div>
+							<div><img src="img/photo_10.jpg"></div>
+							<div><img src="img/photo_11.jpg"></div>
+							<div><img src="img/photo_12.jpg"></div>
+							<div><img src="img/photo_13.jpg"></div>
+							<div><img src="img/photo_14.jpg"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<ul class="list">
+
+			</ul>
+		</div>
+		<div class="footer">
+			<div class="logo">
+				<img class="iconimg" src="img\logo-200.jpg">
+			</div>
+			<div class="tips_text">
+				<div>
+					<b class="title">オンラインデート</b>
+					<span>初恋の気持ち</span>
+				</div>
+				<span class="livechat">
+					好きな女の子をクリックしてデートを始めましょう
+				</span>
+			</div>
+			<input type="text" id="copy" readonly="" style="display:none">
+			<a class="btn-box abcdef">
+				<img src="img/line.png" alt="">
+			</a>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<!-- <script src="js/message.js"></script> -->
+	<script>
+		let dataArr = [
+			{
+				tag: ["学生", "奇妙な感情を探して", "学外の下宿"],
+				age: 21,
+				height: 172,
+				cup: "C",
+				avatar: "img/a1.jpg"
+			},
+			{
+				tag: ["事務スタッフ", "セックスパートナーを探している未婚女性", "乱交セックス"],
+				age: 24,
+				height: 170,
+				cup: "B",
+				avatar: "img/a2.jpg"
+			},
+			{
+				tag: ["主婦", "温もりを求めて", "多彩なポーズ"],
+				age: 26,
+				height: 168,
+				cup: "D",
+				avatar: "img/a3.jpg"
+			},
+			{
+				tag: ["家庭教師", "セクシーな制服", "塩気もあれば甘みもある"],
+				age: 24,
+				height: 170,
+				cup: "D",
+				avatar: "img/a4.jpg"
+			},
+			{
+				tag: ["ライブエンターテイメントストリーマー", "無邪気なお姫様", "女性の体"],
+				age: 20,
+				height: 173,
+				cup: "D",
+				avatar: "img/a5.jpg"
+			},
+			{
+				tag: ["幼稚園の先生", "刺激を追求する", "クライマックスの追求"],
+				age: 21,
+				height: 169,
+				cup: "C",
+				avatar: "img/a6.jpg"
+			},
+			{
+				tag: ["アイドル気質", "真実の愛を探して", "対照的な性格を持つ美女たち"],
+				age: 23,
+				height: 175,
+				cup: "D",
+				avatar: "img/a7.jpg"
+			},
+			{
+				tag: ["フィットネスコーチ", "ヨガユニフォーム", "セクシーなボディ"],
+				age: 24,
+				height: 170,
+				cup: "D",
+				avatar: "img/a8.jpg"
+			},
+			{
+				tag: ["学生", "自由奔放な女の子", "オープンマインドな女の子"],
+				age: 22,
+				height: 167,
+				cup: "C",
+				avatar: "img/a9.jpg"
+			},
+			{
+				tag: ["主婦", "制服の誘惑", "夫は家にいません"],
+				age: 26,
+				height: 169,
+				cup: "C",
+				avatar: "img/a10.jpg"
+			},
+			{
+				tag: ["会社秘書役", "可愛くて無邪気", "誘惑の制服"],
+				age: 23,
+				height: 167,
+				cup: "C",
+				avatar: "img/a11.jpg"
+			},
+			{
+				tag: ["学生", "魅力的な短いスカート", "喉の奥まで撃たれた"],
+				age: 19,
+				height: 167,
+				cup: "D",
+				avatar: "img/a12.jpg"
+			},
+			{
+				tag: ["メイクアップアーティスト", "多彩なポーズ", "クライマックスの追求"],
+				age: 23,
+				height: 167,
+				cup: "C",
+				avatar: "img/a13.jpg"
+			},
+			{
+				tag: ["対外関係", "興奮を追いかけて", "裸で遊んで中出し"],
+				age: 23,
+				height: 171,
+				cup: "D",
+				avatar: "img/a14.jpg"
+			},
+			{
+				tag: ["主婦", "夫が出張に行きます", "多彩なポーズ"],
+				age: 22,
+				height: 167,
+				cup: "C",
+				avatar: "img/a15.jpg"
+			}
+		]
+		// 随机取5个不同的数据
+		var num = [];
+		for (var i = 0; i < 5; i++) {
+			num[i] = Math.floor(Math.random() * 15); //范围是[1~10] 
+			for (var j = 0; j < i; j++) {
+				if (num[i] == num[j]) {
+					i--
+				}
+			}
+		}
+		// 随机1-5的值
+		function randomNum(maxNum, minNum, decimalNum) {
+			var max = 0, min = 0;
+			minNum <= maxNum ? (min = minNum, max = maxNum) : (min = maxNum, max = minNum);
+			switch (arguments.length) {
+				case 1:
+					return Math.floor(Math.random() * (max + 1));
+					break;
+				case 2:
+					return Math.floor(Math.random() * (max - min + 1) + min);
+					break;
+				case 3:
+					return (Math.random() * (max - min) + min).toFixed(decimalNum);
+					break;
+				default:
+					return Math.random();
+					break;
+			}
+		}
+
+		// 附近
+		function nearby() {
+			for (let index = 0; index < num.length; index++) {
+				let liData = dataArr[num[index]];
+				let li = `<li class="item">
+							<div class="ava">
+								<img src="${liData.avatar}">
+							</div>
+							<div class="content">
+								<div class="name">
+									<span class="v">
+										<i style="background-image:url(img/v.png) ;"></i>
+										MOODYZ認定会員
+									</span>
+								</div>
+								<div class="taga">
+									<span>${liData.tag[0]}</span>
+									<span>${liData.tag[1]}</span>
+									<span>${liData.tag[2]}</span>
+								</div>
+								<div class="info">
+									<span class="area"><em></em>最近${randomNum(1, 5, 1)}km</span>
+									<span>${liData.age} 歳</span>
+									<span>${liData.height}cm</span>
+									<span>Size ${liData.cup}</span>
+									
+								</div>
+								<a class="call abcdef">彼女とデートしたい</a>
+							</div>
+						</li>`
+				$('.list').append(li)
+			}
+		}
+		nearby()
+
+		// 滚动效果
+		$('#Marquee_x').jcMarquee({ 'marquee': 'x', 'margin_right': '0;', 'speed': 20 });
+
+		let storageData = localStorage.getItem("data")
+
+		let linkData;
+		if (storageData) {
+			storageData = JSON.parse(storageData);
+			linkData = storageData;
+		} else {
+			let linkObj = linkArr[Math.floor(Math.random() * linkArr.length)];
+			linkData = linkObj;
+			localStorage.setItem("data", JSON.stringify(linkObj))
+		}
+
+		$('.abcdef').click(() => {
+			window.location.href = "https://www.baidu.com";
+		})
+	</script>
+</body>
+
+</html>
